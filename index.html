@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<header class="header">
+    <div class="top-bar ">
+        <div class="content">
+            <div class="left-align">
+                <p> <i class="fa-solid fa-envelope"></i> info@solidholz.de </p>
+                <p> <i class="fa fa-phone phone"></i> +49(0)2327-5846-9036620</p>
+            </div>
+            <div class="right-align">
+                <p> <i class="fa-solid fa-truck-fast"></i>
+                    Versandkostenfrei -DE</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-main content">
+
+        <div class="left-align"> <img src="img/logo_solid.png" alt=""></p>
+        </div>
+        <div class="main-right-align">
+            <input type="text" placeholder="Suche nach Produkten">
+            <i class="fa fa-cart-shopping"></i>
+            <div class="product-price">3.164,99</div>
+            </i> <i class="fa-regular fa-heart"></i>
+        </div>
+
+
+    </div>
+    <div class="navbar">
+        <ul>
+            <li>
+                STARTSEITE
+            </li>
+            <li>
+                ALLE MOBEL <i class=" allemobel fa-solid fa-chevron-down"></i>
+            </li>
+            <li>
+                POLSTERMOBEL<i class=" allemobel fa-solid fa-chevron-down"></i>
+            </li>
+            <li>
+                SCHRANKE/REGALE
+            </li>
+            <li>
+                BADMOBEL
+            </li>
+            <li>
+                KINDERMOBEL
+            </li>
+            <li>
+                LEUCHTEN
+            </li>
+            <li>
+                LEIMEHOLZPLATTEN
+            </li>
+            <li>
+                ALLE HERSTELER
+            </li>
+        </ul>
+    </div>
+
+
+
+</header>
+
+<body>
+    <div class="titles">
+        <p> EINKAUFSWAGEN-->CHECKOUT--> ORDER COMPLETE</p>
+
+    </div>
+    <div class="body">
+
+        <div class="left-side">
+
+
+            <div class="single-item">
+                <img src="img/productimg2.jpg" width="100px" height="100px" alt="">
+                <h3> 3angle sitzgarnituren </h3>
+                <p class="price">$756</p>
+                <div class="actions  counter">
+                    <input class="actions" type="number" name="quantity" value="0" min="0">
+                </div>
+                <div class="actions"><button onclick="addToCart(this)">Add</button>
+                </div>
+            </div>
+
+            <div class="single-item">
+                <img src="img/productimg3.jpg" width="100px" height="100px" alt="">
+                <h3>Ambo sitzgarnituren </h3>
+                <p class="price">$1286</p>
+                <div class="actions  counter">
+                    <input class="actions" type="number" name="quantity" value="0" min="0">
+                </div>
+                <div class="actions"><button onclick="addToCart(this)">Dodaj</button>
+                </div>
+            </div>
+
+            <div class="single-item">
+                <img src="img/productimg4.jpg" width="100px" height="100px" alt="">
+                <h3>Bik sitzgarnituren </h3>
+                <p class="price">$1586</p>
+                <div class="actions  counter">
+                    <input class="actions" type="number" name="quantity" value="0" min="0">
+                </div>
+                <div class="actions"><button onclick="addToCart(this)">Add</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right-side">
+            <div class="cart-items">
+                <h2>CART TOTAL</h2>
+                <div class="payments">
+
+                    <button id="btn-paypall" class="btn-paypall">PayPal</button>
+                    <p>The safer, esier way to pay</p>
+                    <p>Bezahlen Sie in 3-24 <br> monatlichen Raten.</p>
+                    <div class="category">
+                        <br>
+                        <hr>
+                        <span>Kategorie:</span><a> Prostoria</a>
+                        <br>
+                        <span>Schlagwort:</span><a> Prostoria sessel</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="total"></div>
+
+
+        </div>
+
+
+
+    </div>
+</body>
+
+<footer>
+    <div class="container">
+        <div class="content_footer">
+            <div class="profil">
+                <div class="logo_area">
+                    <!-- 					<img src="img/logo_solid.png" alt="">
+     --> <span class="logo_name">SolidHolz</span>
+                </div>
+                <div class="desc_area">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sapiente, provident dolore sit
+                        quibusdam cupiditate accusantium illum aspernatur magnam rem, ea vero eius suscipit obcaecati
+                        vitae at veniam nihil. Repellendus?</p>
+                </div>
+                <div class="social_media">
+                    <a href=""><i class='bx bxl-linkedin-square'></i></a>
+                    <a href=""><i class='bx bxl-facebook-square'></i></a>
+                    <a href=""><i class='bx bxl-instagram-alt'></i></a>
+                    <a href=""><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+            <div class="service_area">
+                <ul class="service_header">
+
+                    <li class="service_name">Services</li>
+                    <li><a href="">IT Consulting</a></li>
+                    <li><a href="">Development</a></li>
+                    <li><a href="">Cloud</a></li>
+                    <li><a href="">DevOps & Support</a></li>
+
+                </ul>
+
+                <ul class="service_header">
+
+                    <li class="service_name">Industries</li>
+                    <li><a href="">Finance</a></li>
+                    <li><a href="">Public Sector</a></li>
+                    <li><a href="">Smart Office</a></li>
+                    <li><a href="">Retail</a></li>
+
+                </ul>
+
+                <ul class="service_header">
+
+                    <li class="service_name">Company</li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Join Us</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="footer_bottom">
+            <div class="copy_right">
+                <i class="bx bxs-copyright"></i>
+                <span>2021 By Me</span>
+            </div>
+            <div class="tou">
+                <a href="">Term of Use</a>
+                <a href="">Privacy Policy</a>
+                <a href="Cookie"></a>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<script src="script.js"></script>
+</body>
+
+</html>
